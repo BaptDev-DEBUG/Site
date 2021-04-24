@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BaptDev -- Le site officiel</title>
+    <title>BaptDev - Le site officiel</title>
 
     <!-- Code CSS de la page -->
     <style>
-
+        li.btn {
+            list-style-type: none;
+            display: inline-block;
+        }
     </style>
 
 </head>
@@ -15,18 +18,22 @@
     <!-- Menu de navigation -->
     <nav>
         <ul>
-            <li>
+            <li class="button" id="home">
                 <a href="index.html">Accueil</a>
             </li>
-            <!--
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            -->
+            <li class="button" id="new">
+                <a href="#">Nouveautés</a>
+            </li>
+            <li class="button" id="discover">
+                <a href="#">Découvrir</a>
+            </li>
+            <li class="button" id="contact">
+                <a href="#">Contacts</a>
+            </li>
         </ul>
     </nav>
+    <header>
+        <h2 class="title">Le site de BaptDev !</h2>
+    </header>
 </body>
 </html>
