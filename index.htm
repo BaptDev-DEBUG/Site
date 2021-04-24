@@ -53,9 +53,24 @@
                 <a href="#">Contacts</a>
             </li>
         </ul>
+
+        <input type="search" id="searchbar" placeholder="Recherche" onchange="search()">
+        <input type="button" id="confirm" placeholder="Recherche" onclick="search()" value="&marker;">
     </nav>
     <header>
         <h2 class="title">Le site de BaptDev !</h2>
     </header>
+
+    <script>
+        function search()
+        {
+            var s = document.getElementById("searchbar").value;
+            switch (s)
+            {
+                case "SFML":
+                    window.open("index.htm");
+            }
+        }
+    </script>
 </body>
 </html>
