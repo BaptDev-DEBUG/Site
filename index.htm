@@ -8,12 +8,23 @@
 <body>
     <!-- Code CSS de la page -->
     <style>
-        body {
+        * {
             font-family: Calibri;
             color: #fff;
             background-color: #222;
+
+            margin: 0;
+            padding: 0;
+            outline: 0;
         }
         
+        #page {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+        }
+
         nav ul {
             display: inline-block;
         }
@@ -45,28 +56,32 @@
         }
     </style>
 
-    <!-- Menu de navigation -->
-    <nav>
-        <ul>
-            <li class="button" id="home">
-                <a href="index.html">Accueil</a>
-            </li>
-            <li class="button" id="new">
-                <a href="#">Nouveautés</a>
-            </li>
-            <li class="button" id="discover">
-                <a href="#">Découvrir</a>
-            </li>
-            <li class="button" id="contact">
-                <a href="#">Contacts</a>
-            </li>
-        </ul>
+    <div id="page">
 
-        <input type="search" id="searchbar" placeholder="Recherche" onchange="search()">
-        <input type="button" id="confirm" placeholder="Recherche" onclick="search()" value="OK">
-    </nav>
-    <header>
-        <h2 class="title">Le site de BaptDev !</h2>
-    </header>
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li class="button" id="home">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="button" id="new">
+                    <a href="#">Nouveautés</a>
+                </li>
+                <li class="button" id="discover">
+                    <a href="#">Découvrir</a>
+                </li>
+                <li class="button" id="contact">
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+
+            <input type="search" id="searchbar" placeholder="Recherche" onchange="search()">
+            <input type="button" id="confirm" placeholder="Recherche" onclick="search()" value="OK">
+        </nav>
+        <header>
+            <h2 class="title">Le site de BaptDev !</h2>
+        </header>
+
+    </div>
 </body>
 </html>
